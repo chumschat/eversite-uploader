@@ -1,0 +1,58 @@
+{
+  "ABI version": 2,
+  "version": "2.2",
+  "header": ["pubkey", "time", "expire"],
+  "functions": [
+    {
+      "name": "supportsInterface",
+      "inputs": [
+        {"name":"answerId","type":"uint32"},
+        {"name":"interfaceID","type":"uint32"}
+      ],
+      "outputs": [
+        {"name":"support","type":"bool"}
+      ]
+    },
+    {
+      "name": "getRecords",
+      "inputs": [
+        {"name":"answerId","type":"uint32"}
+      ],
+      "outputs": [
+        {"name":"records","type":"map(uint32,cell)"}
+      ]
+    },
+    {
+      "name": "setRecord",
+      "inputs": [
+        {"name":"key","type":"uint32"},
+        {"name":"value","type":"cell"}
+      ],
+      "outputs": [
+      ]
+    },
+    {
+      "name": "deleteRecord",
+      "inputs": [
+        {"name":"key","type":"uint32"}
+      ],
+      "outputs": [
+      ]
+    },
+    {
+      "name": "getInfo",
+      "inputs": [
+        {"name":"answerId","type":"uint32"}
+      ],
+      "outputs": [
+        {"name":"id","type":"uint256"},
+        {"name":"owner","type":"address"},
+        {"name":"manager","type":"address"},
+        {"name":"collection","type":"address"}
+      ]
+    }
+  ],
+  "data": [],
+  "events": [],
+  "fields": []
+}
